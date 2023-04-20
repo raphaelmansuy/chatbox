@@ -201,7 +201,7 @@ export default function SettingWindow(props: Props) {
               })
             }}
           >
-            {[8, 10, 12, 13, 14, 15, 16, 17, 18].map((size) => (
+            {[8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map((size) => (
               <MenuItem key={size} value={size}>
                 {size}px
               </MenuItem>
