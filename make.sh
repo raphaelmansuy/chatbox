@@ -2,8 +2,8 @@ set -e
 
 rm -rf out
 
-npx electron-forge make -p darwin -a x64
-# npx electron-forge make -p darwin -a arm64
+#npx electron-forge make -p darwin -a x64
+npx electron-forge make -p darwin -a arm64
 
 npx electron-forge make -p win32 -a x64
 # npx electron-forge make -p win32 -a arm64
@@ -13,8 +13,8 @@ npx electron-forge make -p linux -a x64
 
 mkdir -p out/release
 
-# cp out/make/deb/arm64/chatbox_0.1.5_arm64.deb out/release/chatbox_0.1.5_arm64.deb
-cp out/make/deb/x64/chatbox_0.1.5_amd64.deb out/release/chatbox_0.1.5_amd64.deb
+cp out/make/deb/arm64/chatbox_0.1.5_arm64.deb out/release/chatbox_0.1.5_arm64.deb
+#cp out/make/deb/x64/chatbox_0.1.5_amd64.deb out/release/chatbox_0.1.5_amd64.deb
 
 # cp 'out/make/squirrel.windows/arm64/chatbox-0.1.5 Setup.exe' out/release/chatbox_0.1.5_arm64_setup.exe
 cp 'out/make/squirrel.windows/x64/chatbox-0.1.5 Setup.exe' out/release/chatbox_0.1.5_x64_setup.exe
